@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/laburl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:typeface="serif"
+            android:text="服务器Web地址"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/webAddress"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:longClickable="true"
+            android:scrollbars="horizontal"
+            android:textSize="18sp"
+            android:text="http://117.71.57.223:5001/WebService1.asmx"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/labqybs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:typeface="serif"
+            android:text="区域标识"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="30dp"
+            />
+
+        <EditText
+            android:id="@+id/Qybs"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:longClickable="true"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="30dp"
+            />
+
+        <TextView
+            android:id="@+id/labmac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:typeface="serif"
+            android:text="MAC地址"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="30dp"
+            />
+
+        <EditText
+            android:id="@+id/Mac"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:longClickable="true"
+            android:textSize="18sp"
+
+            android:layout_marginVertical="30dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

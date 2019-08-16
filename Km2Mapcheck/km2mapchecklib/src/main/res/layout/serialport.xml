@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/labSerialPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:typeface="serif"
+        android:text="接收串口"
+        android:layout_marginLeft="10dp"/>
+
+    <Spinner
+        android:id="@+id/serialPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/serialport_com"/>
+
+    <TextView
+        android:id="@+id/labBaud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:typeface="serif"
+        android:text="波特率"
+        android:layout_marginLeft="50dp"/>
+
+    <Spinner
+        android:id="@+id/serialPortBaud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/serialport_baud"/>
+
+</LinearLayout>

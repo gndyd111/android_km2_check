@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/lablocalIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:typeface="serif"
+        android:text="热点IP"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/tracklocalip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:longClickable="true"
+        android:scrollbars="horizontal"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="192.168.43.1"/>
+
+    <TextView
+        android:id="@+id/labport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:typeface="serif"
+        android:text="本机监听端口"
+        android:layout_marginLeft="50dp"
+        />
+
+    <EditText
+        android:id="@+id/tracknetport"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:longClickable="true"
+        android:scrollbars="horizontal"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="10086"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/debug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="调试版"
+                android:textSize="22sp"
+                android:layout_marginVertical="30dp"/>
+
+            <RadioButton
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检测版"
+                android:textSize="22sp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginVertical="30dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
